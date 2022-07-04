@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+    background-color: #205189;
+    padding: 20px; 
+}
+.top{    
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        
+}
+.title{
+    display: flex;
+    flex-direction: column;
+ 
+  
+/* height: 110px; */
+width: 700px;
+margin-left: 50px;
+font-size: 50px;
+border: 1px solid white;
+color: white;
+
+}
+.tekst{
+    display: flex;
+    justify-content: flex-end;
+    font-weight: 550;
+    letter-spacing: 80px;
+    border: 2px solid white;
+    padding-right: 0px;
+}
+.icons{
+    border: 1px solid yellow;
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+}
+.logo{
+    width: 110px;
+    height: 110px;
+    box-shadow: 16px 14px 20px #0000008c;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.logo::before{
+    content: "";
+    background-image: conic-gradient(
+        white 20deg,
+        transparent 120deg
+    );
+    width: 150%;
+    height: 150%;
+    position: absolute;
+    animation: rotate 4s linear infinite;;
+}
+.logo::after{
+    content: "";
+        width: 140px;
+        height: 140px;
+        
+        position: absolute;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ff0052;
+        font-size: larger;
+        letter-spacing: 5px;
+        /* box-shadow: inset 20px 20px 20px #0000008c; */
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+img{
+    height: 100px;
+    width: 100px;
+  
+   top: 25px;
+   right: 25px;
+   border-radius: 8px;
+   
+   position: absolute;
+
+}
+
+
+.body{
+   display: flex;
+margin-top: 20px;
+height: 70%;
+border: 1px solid red;
+}
+.section{
+    display: flex;
+}
